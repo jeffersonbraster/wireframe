@@ -81,6 +81,8 @@ h3 {
   color: var(--gray-colors-400); 
 }
 
+/* Style header */
+
 header {
   width: 100%;
   height: 8.8rem;
@@ -117,8 +119,58 @@ header nav .btn-primary {
   padding: 0.9rem 3.4rem;
 }
 
+/* Style header fim */
+
+/* Style herp */
+.s-hero {
+  padding: 7.2rem 0;
+}
+
+.s-hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s-hero .text {
+  width: 100%;
+  max-width: 64rem;
+}
+
+.s-hero .text h1 {
+  margin-bottom: 2rem;
+}
+
+.s-hero .text p {
+  margin-bottom: 5.6rem;
+  max-width: 48.8rem;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: var(--gray-colors--100);
+}
+
+.s-hero .text .btn-primary {
+  padding: 1.7rem 3.7rem;
+}
+
+.s-hero .image {
+  width: 100%;
+  max-width: 48rem;
+  height: 49.6rem;
+  background-color: var(--gray-colors-800);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 
 @media (max-width: 1200px) {
+  .s-hero .text {
+    max-width: 49%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -127,6 +179,32 @@ header nav .btn-primary {
   }
   header .menu-mobile {
     display: block;
+  }
+
+  .s-hero .container {
+    flex-direction: column;
+  }
+
+  .s-hero .image {
+    max-width: 46%;
+    height: 40rem;
+  }
+
+  .s-hero .text {
+    max-width: 100%;
+    margin-bottom: 4rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s-hero .text h1 {
+    text-align: center;
+  }
+
+  .s-hero .text p {
+    text-align: center;
   }
 }
 
@@ -137,8 +215,31 @@ header nav .btn-primary {
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
   header .logo {
-    max-width: 13.6rem;
+    max-width: 130rem;
+  }
+
+  .s-hero {
+    padding: 4rem 0;
+  }
+
+  .s-hero .text p {
+    margin-bottom: 3rem;
+  }  
+
+  .s-hero .image {
+    height: 30rem;
+  }
+
+  .s-hero .image img {
+    max-width: 10rem;
+  }
+
+  h1 {
+    font-size: 4.2rem;
   }
 }
 
