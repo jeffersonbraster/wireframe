@@ -22,3 +22,10 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+
+.container {
+  width: 100%;
+  max-width: 1246px; /*original 1216, porém para deixar o site responsivo no mobile acrescenta devido ao padding de 15px */
+  margin: 0 auto;
+  padding: 0 15px;
+}
