@@ -2,6 +2,7 @@
   --brand-colors-pink: #f67acb;
   --gray-colors-50: #e6ebf2;
   --gray-colors--100: #050110;
+  --gray-colors--200: #1c1d1f;
   --gray-colors-300: #393c40;
   --gray-colors-400: #5c6066;
   --gray-colors-800: #f7f8fa;
@@ -241,6 +242,34 @@ header nav .btn-primary {
 }
 
 
+.s-card-featured .second-area {
+  margin-top: 11.2rem;
+}
+
+.s-card-featured .second-area .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6.4rem;
+}
+
+.s-card-featured .second-area .all-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem
+}
+
+.s-card-featured .second-area .all-imgs .image {
+  width: 17.6rem;
+  height: 11.2rem;
+  background-color: var(--gray-colors--200);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
 
 
 
@@ -319,12 +348,37 @@ header nav .btn-primary {
     max-width: 100%;
     margin-top: 2rem;
   }
+
+  .s-card-featured .second-area .all-imgs {
+    gap: 2rem 2%;
+  }
+
+  .s-card-featured .second-area .all-imgs .image {
+    width: 23.5%;
+  }
 }
 
 @media (max-width: 768px) {
 }
 
 @media (max-width: 600px) {
+  .s-card-featured .second-area .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s-card-featured .second-area .top .title h2,
+  .s-card-featured .second-area .top .title p {
+    text-align: center;
+  }
+
+  .s-card-featured .second-area .top .title h2 {
+    margin-bottom: 0.8rem;
+  }
+
+  .s-card-featured .second-area .top .title {
+    margin-bottom: 0.2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -366,6 +420,30 @@ header nav .btn-primary {
 
   .s-card-featured .main-area {
     padding-bottom: 4rem;
+  }
+
+  .s-card-featured .second-area {
+    margin-top: 4rem;
+  }
+
+  .s-card-featured .second-area .top .title {
+    margin-bottom: 2.2rem;
+  }
+
+  .s-card-featured .second-area .top p {
+    margin: 0 auto;
+  }
+
+  .s-card-featured .second-area .top {
+    margin-bottom: 3rem;
+  }
+
+  .s-card-featured .second-area .all-imgs {
+    gap: 0.5rem 2%;
+  }
+
+  .s-card-featured .second-area .all-imgs .image {
+    width: 49%;
   }
 }
 
